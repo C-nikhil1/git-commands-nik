@@ -34,7 +34,7 @@
 11. git merge <branch name> --> Merge the specified branch into the main current branch.
 12. git reset the <commit if> --> Reset to the last commit id in branch.
 					    After doing this the file where changes made will be modified state.
-					    There will be two options there either file to keep ready for commit or discard 					    the changes in working directory. using below command.
+					    There will be two options there either file to keep ready for commit or discard the changes in working directory. using below command.
 	git checkout <File Name>
 12. git rm <file Name> --> Remove the file from git. The file will be in deleted state then we can commit as to
 				   remove the file permanently and commit id will created for the same. 
