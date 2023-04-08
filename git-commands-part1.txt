@@ -1,0 +1,50 @@
+######################################################################################################
+
+
+< git config --> to see the config for userame and email locally >>
+
+
+
+1. git init --> Intialize the git under a directory to make it a special directory or local repository.
+2. git add --> Add the untracked files into the staging area, the added files will be ready for commit.
+
+		   We can add the single file into staging area or files in bulk.
+        		a. Add single file into the staging area.
+                		git add <<file name>>
+
+        		b. Add all files presents untracked stat into the staging area
+	             	git add .
+3. git rm --cached <file Name> or 
+   git reset HEAD <File Name> 
+   --> If we add the file in staging and want to get back it to untracked stage.
+4. git status --> Check the file status which are in local repo.
+5. git commit --> Add files presents in staging into the tracking state or under git for tracking.
+			We can commit a single file or multiple files.
+       			a. Commit a single file into the git
+                			git commit <filename> -m "Type the appropriate message"
+       			 b. Commit all files in staging area into the git
+                			git commit -m "Add a appropriate message"
+6. git log --> To see the commits done in current local repo.
+7. git diff --> Use to see the diffrence in changes made i commited file.
+8. git branch --> Check the branches available. It will show the branches after first commit only. 
+			The name of first local branch is master
+9. git checkout -b <branch name> --> Using this command new branch created and switched. 
+						The new branch will have all files and commits from which the new branch							created.
+10. git checkout <branch name> --> Switch from one branch to another branch
+11. git merge <branch name> --> Merge the specified branch into the main current branch.
+12. git reset the <commit if> --> Reset to the last commit id in branch.
+					    After doing this the file where changes made will be modified state.
+					    There will be two options there either file to keep ready for commit or discard 					    the changes in working directory. using below command.
+	git checkout <File Name>
+12. git rm <file Name> --> Remove the file from git. The file will be in deleted state then we can commit as to
+				   remove the file permanently and commit id will created for the same. 
+				   
+				   To undo the changes use git checkout <file>
+13. git clone <URL> --> Make the clone of remote repo locally.
+14. git remote -v --> Check the remote repo configured for the local repo.
+15. git remote add <variable> <URL> --> Using this we can add remote repo for local repo.	
+						    Here variable is the using which we can identify the remote repo and URL 							    is the url for remote add which need to add.
+16. git push <variable name> <branch> --> Push the changes form local to remote repo in specific branch.
+							If branch not mnetioned then changes will be pushed to main branch.
+							
+17. git pull <variable name> <branch> --> Pull the changes form specif branch locally.
