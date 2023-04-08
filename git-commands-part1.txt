@@ -29,7 +29,7 @@
 8. git branch --> Check the branches available. It will show the branches after first commit only. 
 			The name of first local branch is master
 9. git checkout -b <branch name> --> Using this command new branch created and switched. 
-						The new branch will have all files and commits from which the new branch							created.
+						The new branch will have all files and commits from which the new branch created.
 10. git checkout <branch name> --> Switch from one branch to another branch
 11. git merge <branch name> --> Merge the specified branch into the main current branch.
 12. git reset the <commit if> --> Reset to the last commit id in branch.
