@@ -1,7 +1,16 @@
 ######################################################################################################
 
+			GIT COMMANDS PART1
 
-< git config --> to see the config for userame and email locally >>
+######################################################################################################
+
+<< git config --> to see the config for userame and email locally >>
+<< Set the username and email for git in local system >>
+
+git config  --global user.name "Your git username"
+git config -- global user.email "Your git account email address"
+
+-------------------------------------------------------------------------------------------------------
 
 
 
