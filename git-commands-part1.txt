@@ -57,3 +57,6 @@ git config -- global user.email "Your git account email address"
 							If branch not mnetioned then changes will be pushed to main branch.
 							
 17. git pull <variable name> <branch> --> Pull the changes form specif branch locally.
+
+18. git remote set-url  <variable> https://<Personlize Access Token>@github.com/<git username>/repo.git
+		--> This command is use to set the personalize access token (PAT) for remote repo
