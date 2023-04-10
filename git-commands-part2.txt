@@ -36,11 +36,12 @@ Let say you have 10 commits in repo, and you want to combine last 5 commits into
 Step2 :- Run the below command and this will open the editor, in which add s or squash infront last 4 commits so that and save the changes.
 Once this is done squash will be done however you have save the changes after selecting  the commit message.
 
-7. git stash --> It means store the something in hidden place.
+7. git stash --> It means store the something in hidden place. It will store the files which are in staging only and not in untracked stage.
 
 	a. git stash --> stash the item in working directory.
 	b. git stash list --> List the stashed items
 	c. git stash apply stash@{<list_number>} --> Apply the stash to bring the particular item in workin diretcory
-	d. git stash clear --> Clear the stash items
+	d. git stash clear --> Clear stash all items 
 	e. git stash pop --> It brings the last stash item in working directory and will remove from the list.
-	f. git statsh drop <stash number> --> Drop the partcular stash item
+	f. git statsh drop <stash number> --> Drop the last item saved in stash
+	g. git stash save "message" --> Add a comment while stshing the item.
