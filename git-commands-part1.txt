@@ -60,3 +60,16 @@ git config -- global user.email "Your git account email address"
 
 18. git remote set-url  <variable> https://<Personlize Access Token>@github.com/<git username>/repo.git
 		--> This command is use to set the personalize access token (PAT) for remote repo
+
+19. git branch -d <branch name> --> This command use to remove the branch from git
+
+20. git remote remove <variable> --> Remove the remote URL. Here the variable is same that has been used while adding remote URL.
+
+21. git fetch --> Fetch all remote branches.
+
+22. git log --merge --> This commands produce the list of coomits that are causing the conflicts.
+
+23. git reset --mixed --> This command is used to undo the changes to the working directoty and staging area.
+
+24. git merge --abort --> This command helps is exiting the merge process and returning vack to the state before the merging began.
+
