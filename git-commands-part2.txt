@@ -1,0 +1,46 @@
+######################################################################################################
+
+                        GIT COMMANDS PART2
+
+######################################################################################################
+
+
+1. git log --oneline --> See the git commits in oneline
+
+2. git revert <commit id > --> Using this command we can revert the commit that has discrepancy. 
+			       After doing the revert the new commit will be generated in which the file that has discrepancy will be no longer there.
+			       Basically git revert is use to remove the changes from a perticular commit and then the changes in last commit will be the head with new
+			       commit id.
+
+3. git reset <commit id> --> Using this we can correct the changes made in the file and commit the changes with new commit. It will remove the defaulter commit.
+
+4. git cherry-pick <commit id> --> It is use to add perticular commit from one branch to another branch.
+
+5. git merge <branch name> AND git rebase <branch name>
+--> Git merge is always done on github end. However some people do the git merge on CLI which is not safe to do. Also, the rebase can be done on github or CLI too.
+
+Both merge and rebase do the merging. In git merge, it will bring the only commit that specify the merge of branch has been done. In rebase, it maintain the linear history of commits and bring all commits from sub-branch to main branch.
+
+5. PAT - personal access token --> This is generated on github side to get the access particula remote repo. Below is the fromat to add the PAT for remote repo.
+
+git remote set-url <variable> https://PAT Token@github.com/github username/gituhub repo.git
+
+6. Git squash --> It means combine multiple commits into one. This can be done as follow.
+
+Step1 :- Check the commit history 
+
+git log --oneline
+
+Let say you have 10 commits in repo, and you want to combine last 5 commits into one. So that total commits in repo will have 6.
+
+Step2 :- Run the below command and this will open the editor, in which add s or squash infront last 4 commits so that and save the changes.
+Once this is done squash will be done however you have save the changes after selecting  the commit message.
+
+7. git stash --> It means store the something in hidden place.
+
+	a. git stash --> stash the item in working directory.
+	b. git stash list --> List the stashed items
+	c. git stash apply stash@{<list_number>} --> Apply the stash to bring the particular item in workin diretcory
+	d. git stash clear --> Clear the stash items
+	e. git stash pop --> It brings the last stash item in working directory and will remove from the list.
+	f. git statsh drop <stash number> --> Drop the partcular stash item
